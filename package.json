@@ -1,0 +1,32 @@
+{
+  "name": "omerta",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:server": "tsx dev/server.ts",
+    "build": "tsc --noEmit && vite build",
+    "test": "vitest run",
+    "build:fn": "node scripts/build-fn.mjs",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.0",
+    "qrcode": "^1.5.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "esbuild": "^0.23.0",
+    "tsx": "^4.16.0",
+    "typescript": "^5.5.3",
+    "vite": "^5.4.0",
+    "vitest": "^2.0.5"
+  }
+}
