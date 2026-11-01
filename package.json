@@ -9,7 +9,8 @@
     "build": "tsc --noEmit && vite build",
     "test": "vitest run",
     "build:fn": "node scripts/build-fn.mjs",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "play": "npm run build && tsx dev/server.ts"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",

@@ -10,7 +10,18 @@ ou finja ser um personagem — **Chefão** (Tributo +3), **Pistoleiro** (paga 3,
 **Cobrador** (rouba 2; Cobrador/Contador bloqueiam), **Contador** (troca cartas). Qualquer um pode **desafiar** um personagem declarado
 ou um bloqueio: quem blefou perde uma carta, quem acusou errado também. Reações têm **10 s**.
 
-## Rodar localmente
+## Jogar agora (mesma rede Wi-Fi)
+```bash
+npm install
+npm run play
+```
+O comando compila o front e sobe tudo numa porta só. Ele imprime dois endereços:
+1. **TV/notebook:** abra o endereço `…/?mesa` → aparece o QR code e o código da sala.
+2. **Celulares:** leiam o QR code (ou abram o endereço e digitem o código). O primeiro a entrar é o anfitrião e inicia a partida.
+
+As salas ficam em memória nesse computador (reiniciar o servidor apaga as salas). Para jogar com amigos em **redes diferentes** use o deploy com Supabase abaixo.
+
+## Rodar em modo desenvolvimento
 ```bash
 npm install
 npm run dev:server   # API local em memória (porta 8787)
